@@ -134,7 +134,7 @@ const ServicesSection = () => {
               <div className="relative">
                 <div className="w-full h-64 rounded-xl overflow-hidden">
                   <img 
-                    src="/placeholder.svg" 
+                    src="/hero-image.jpg" 
                     alt="Design Process" 
                     className="w-full h-full object-cover"
                   />
