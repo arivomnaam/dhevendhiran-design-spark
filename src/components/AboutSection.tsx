@@ -15,8 +15,8 @@ const AboutSection = () => {
             <div className="w-full max-w-md aspect-square relative">
               <div className="w-full h-full rounded-2xl overflow-hidden border border-white/10 shadow-lg">
                 <img 
-                  src="/placeholder.svg" 
-                  alt="Dhevendhiran R - About Me" 
+                  src="/lovable-uploads/d1c50d10-80ac-41eb-93e9-363ea95d24f0.png" 
+                  alt="Dhevendhiran R - Graphic Designer Action Figure" 
                   className="w-full h-full object-cover"
                 />
               </div>
