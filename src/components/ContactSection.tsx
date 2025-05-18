@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import emailjs from 'emailjs-com';
 import { Button } from "@/components/ui/button";
@@ -44,11 +43,10 @@ const ContactSection = () => {
     setIsSubmitting(true);
     
     try {
-      // Replace these with your actual EmailJS service, template, and user IDs
-      // You'll need to set these up in your EmailJS account
-      const serviceId = "YOUR_SERVICE_ID";
-      const templateId = "YOUR_TEMPLATE_ID";
-      const userId = "YOUR_USER_ID";
+      // Using the provided EmailJS credentials
+      const serviceId = "service_n2u9jgs";
+      const templateId = "template_ue2a7t8";
+      const userId = "-8L15jZaPxkRweHNn";
       
       await emailjs.send(serviceId, templateId, {
         from_name: data.name,
