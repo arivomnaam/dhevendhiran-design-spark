@@ -26,39 +26,21 @@ const portfolioItems = [
   },
   {
     id: 3,
-    title: "E-commerce UI Design",
-    description: "Modern user interface design for a fashion e-commerce platform focusing on user experience and conversion.",
+    title: "Movie Poster Design",
+    description: "Cinematic poster design for an independent film with emphasis on visual storytelling and emotion.",
     category: "UI Design",
     imageSrc: "/placeholder.svg",
-    detailedDescription: "Designed a clean, intuitive interface that enhances the shopping experience and guides users efficiently through the purchase journey. The UI features carefully considered typography, whitespace, and visual hierarchy to showcase products effectively.",
-    tools: ["Figma", "Adobe Illustrator"]
+    detailedDescription: "Created a compelling movie poster that captures the film's central themes and mood through careful composition, typography, and color grading. The design aims to intrigue viewers and convey the emotional tone of the narrative while maintaining professional industry standards.",
+    tools: ["Photoshop", "Adobe Illustrator"]
   },
   {
     id: 4,
-    title: "Cultural Event Banner Series",
-    description: "Series of banners for the annual cultural celebrations at college showcasing traditional art forms.",
+    title: "Vehicle Pool Management System",
+    description: "Visual identity and UI design for a fleet management application focused on usability and information hierarchy.",
     category: "Event",
     imageSrc: "/placeholder.svg",
-    detailedDescription: "Developed a cohesive series of banners that highlight various cultural performances and activities. The designs incorporate traditional patterns and motifs while maintaining a fresh, contemporary look that appeals to the student audience.",
-    tools: ["Adobe Illustrator", "Photoshop", "Canva"]
-  },
-  {
-    id: 5,
-    title: "Social Media Campaign",
-    description: "Comprehensive social media graphics package for a local startup's product launch.",
-    category: "Social Media",
-    imageSrc: "/placeholder.svg",
-    detailedDescription: "Created an engaging series of social media graphics that maintained brand consistency while offering visual variety to keep the audience interested throughout the campaign. The designs were optimized for different platforms while telling a cohesive story about the product.",
-    tools: ["Photoshop", "Canva"]
-  },
-  {
-    id: 6,
-    title: "Mobile App UI Concept",
-    description: "Conceptual UI design for a productivity mobile application with dark mode interface.",
-    category: "UI Design",
-    imageSrc: "/placeholder.svg",
-    detailedDescription: "Developed a sleek, user-friendly interface concept for a productivity app that emphasizes ease of use and visual comfort. The dark mode design reduces eye strain while maintaining excellent readability and incorporating subtle animations for an engaging user experience.",
-    tools: ["Figma", "Adobe Illustrator"]
+    detailedDescription: "Designed a comprehensive visual system for a vehicle fleet management application. The project included creating an intuitive dashboard, streamlined booking interfaces, and clear reporting visualizations. The design prioritizes user efficiency with color-coded status indicators and simplified navigation paths.",
+    tools: ["Figma", "Adobe Illustrator", "Photoshop"]
   }
 ];
 
