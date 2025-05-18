@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, DialogClose } from "@/components/ui/dialog";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 // Define portfolio items
 const portfolioItems = [
@@ -11,7 +12,7 @@ const portfolioItems = [
     title: "Construction Shop Brand Identity",
     description: "Complete branding package including logo, business cards, and promotional banners for a local construction business.",
     category: "Branding",
-    imageSrc: "/placeholder.svg",
+    imageSrc: "/lovable-uploads/9f7c2bb6-2238-4b7e-8463-6a89fbbeef35.png",
     detailedDescription: "Developed a cohesive brand identity for a friend's construction shop that conveys reliability and professionalism. The design focuses on bold typography paired with industrial elements to communicate strength and expertise in the construction field.",
     tools: ["Adobe Illustrator", "Photoshop"]
   },
@@ -20,7 +21,7 @@ const portfolioItems = [
     title: "College Tech Fest Poster",
     description: "Eye-catching poster design for the annual technology festival at IFET College of Engineering.",
     category: "Event",
-    imageSrc: "/placeholder.svg",
+    imageSrc: "/lovable-uploads/8b747a22-8243-4d37-8644-453f7aade384.png",
     detailedDescription: "Created a vibrant poster that captures the innovative spirit of the college's tech fest. The design uses dynamic geometric shapes and a bold color scheme to attract attention and communicate the event's tech-forward focus.",
     tools: ["Adobe Illustrator", "Photoshop"]
   },
@@ -29,7 +30,7 @@ const portfolioItems = [
     title: "Movie Poster Design",
     description: "Cinematic poster design for an independent film with emphasis on visual storytelling and emotion.",
     category: "UI Design",
-    imageSrc: "/placeholder.svg",
+    imageSrc: "/lovable-uploads/c43df5d5-1ad7-4f88-8de7-a4e6fca53969.png",
     detailedDescription: "Created a compelling movie poster that captures the film's central themes and mood through careful composition, typography, and color grading. The design aims to intrigue viewers and convey the emotional tone of the narrative while maintaining professional industry standards.",
     tools: ["Photoshop", "Adobe Illustrator"]
   },
@@ -38,7 +39,7 @@ const portfolioItems = [
     title: "Vehicle Pool Management System",
     description: "Visual identity and UI design for a fleet management application focused on usability and information hierarchy.",
     category: "Event",
-    imageSrc: "/placeholder.svg",
+    imageSrc: "/lovable-uploads/518af080-d2ca-47e0-88ba-c99fa66e0d43.png",
     detailedDescription: "Designed a comprehensive visual system for a vehicle fleet management application. The project included creating an intuitive dashboard, streamlined booking interfaces, and clear reporting visualizations. The design prioritizes user efficiency with color-coded status indicators and simplified navigation paths.",
     tools: ["Figma", "Adobe Illustrator", "Photoshop"]
   }
@@ -91,11 +92,13 @@ const PortfolioSection = () => {
               className="bg-secondary/50 border-white/5 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
             >
               <div className="aspect-[16/10] overflow-hidden">
-                <img 
-                  src={item.imageSrc} 
-                  alt={item.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                />
+                <AspectRatio ratio={16/10}>
+                  <img 
+                    src={item.imageSrc} 
+                    alt={item.title} 
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                </AspectRatio>
               </div>
               <CardContent className="pt-6">
                 <div className="flex justify-between items-start mb-2">
@@ -128,12 +131,14 @@ const PortfolioSection = () => {
               <DialogTitle className="text-xl font-medium">{selectedProject.title}</DialogTitle>
             </DialogHeader>
             <div className="space-y-6">
-              <div className="aspect-[16/9] overflow-hidden rounded-md">
-                <img 
-                  src={selectedProject.imageSrc} 
-                  alt={selectedProject.title} 
-                  className="w-full h-full object-cover"
-                />
+              <div className="overflow-hidden rounded-md">
+                <AspectRatio ratio={16/9}>
+                  <img 
+                    src={selectedProject.imageSrc} 
+                    alt={selectedProject.title} 
+                    className="w-full h-full object-cover"
+                  />
+                </AspectRatio>
               </div>
               <div>
                 <h4 className="text-lg font-medium mb-2">Project Details</h4>
